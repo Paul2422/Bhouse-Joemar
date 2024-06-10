@@ -173,7 +173,12 @@
                         <td colspan="2">' + (feature.properties['Name'] !== null ? autolinker.link(feature.properties['Name'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Picture'] !== null ? '<img src="images/' + String(feature.properties['Picture']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
+                        <th scope="row">Image 01</th>\
+                        <td>' + (feature.properties['Image 01'] !== null ? '<img src="images/' + String(feature.properties['Image 01']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Image02</th>\
+                        <td>' + (feature.properties['Image02'] !== null ? '<img src="images/' + String(feature.properties['Image02']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
