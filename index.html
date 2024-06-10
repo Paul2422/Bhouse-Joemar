@@ -19,7 +19,7 @@
             margin: 0;
         }
         </style>
-        <title>Bayawan Demographic Data</title>
+        <title>Bhouse Skitch/location</title>
     </head>
     <body>
         <div id="map">
@@ -195,6 +195,9 @@
                     <tr>\
                         <td colspan="2">' + (feature.properties['Photo'] !== null ? '<img src="images/' + String(feature.properties['Photo']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
                     </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Photo 2'] !== null ? '<img src="images/' + String(feature.properties['Photo 2']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
+                    </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
             var popup = layer.getPopup();
@@ -242,7 +245,7 @@
                 return this._div;
             };
             title.update = function () {
-                this._div.innerHTML = '<h2>Bayawan Demographic Data</h2>';
+                this._div.innerHTML = '<h2>Bhouse Skitch/location</h2>';
             };
             title.addTo(map);
         var baseMaps = {};
